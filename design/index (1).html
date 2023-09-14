@@ -1,731 +1,556 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css"
-        integrity="sha384-PJsj/BTMqILvmcej7ulplguok8ag4xFTPryRq8xevL7eBYSmpXKcbNVuy+P0RMgq" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-PJsj/BTMqILvmcej7ulplguok8ag4xFTPryRq8xevL7eBYSmpXKcbNVuy+P0RMgq"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css"
+    />
 
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
 
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
     <script src="./dataTable.js"></script>
     <script src="./graph.js"></script>
 
-    <title>Showcase</title>
-</head>
+    <title>SHASHANK</title>
+  </head>
 
-<body>
-
-    <nav class="navbar bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
-        <div class="container-fluid">
-            <a class="navbar-brand btn" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-current="page"
-                style="text-align: start;"><span><i class="fa-solid fa-robot fa-spin"></i></span>&nbsp; SHOWCASE</a>
-        </div>
+  <body>
+    <nav
+      class="navbar bg-dark border-bottom border-bottom-dark"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a
+          class="navbar-brand btn"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          aria-current="page"
+          style="text-align: start"
+          ><span><i class="fa-solid fa-robot fa-spin"></i></span>&nbsp;
+          SHOWCASE</a
+        >
+      </div>
     </nav>
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Welcome to <b>SHOWCASE</b></h1>
-                </div>
-                <div class="modal-body">
-                    Hello!<br>This is My First Bootstrap Webpage.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- modal dialog when we click on Showcase -->
+    <!-- <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    > 
 
-    <br>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Welcome to <b>SHOWCASE</b>
+            </h1>
+          </div>
+          <div class="modal-body">
+            Hello!<br />This is My First Bootstrap Webpage.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div> 
+    </div> -->
+
+    <br />
     <div class="container text-center">
-        <div class="row align-items-center d-flex">
-            <div class="col-lg-6 col-sm-12">
-                <div class="card">
-                    <nav>
-                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
-                                data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
-                                aria-selected="true">Home</button>
-                            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
-                                data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
-                                aria-selected="false">Profile</button>
-                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"
-                                data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
-                                aria-selected="false">Contact</button>
-                            <button class="nav-link" id="nav-blog-tab" data-bs-toggle="tab" data-bs-target="#nav-blog"
-                                type="button" role="tab" aria-controls="nav-blog" aria-selected="false">Blog</button>
-                            <button class="nav-link" id="nav-about-tab" data-bs-toggle="tab" data-bs-target="#nav-about"
-                                type="button" role="tab" aria-controls="nav-about" aria-selected="false">About</button>
-                            <button class="nav-link" id="nav-help-tab" data-bs-toggle="tab" data-bs-target="#nav-help"
-                                type="button" role="tab" aria-controls="nav-help" aria-selected="false">Help</button>
-                        </div>
-                    </nav>
-                    <div class="tab-content" id="nav-tabContent">
-                        <div class="tab-pane fade show active mt-2" id="nav-home" role="tabpanel"
-                            aria-labelledby="nav-home-tab" tabindex="0">This is some placeholder content the Home tab's
-                            associated content. Clicking another tab will toggle the visibility of this one for the
-                            next. The tab JavaScript swaps classes to control the content visibility and styling. You
-                            can use it with tabs, pills, and any other .nav-powered navigation. Clicking another tab
-                            will toggle the visibility of this one for the next.<br><b>Thanks!</b></div>
-                        <div class="tab-pane fade mt-2" id="nav-profile" role="tabpanel"
-                            aria-labelledby="nav-profile-tab" tabindex="0">The word nature has been used for various
-                            uses today and it mostly depicts wildlife and geology. Nature usually refers to general
-                            realms that have not been altered by man like beaches, forests, rocks, wild animals,
-                            mountains hills etc when compared to manmade items like manufactured goods.Nature was
-                            derived from the Latin word Natura, which actually means birth.<br><b>Thanks!</b>
-                        </div>
-                        <div class="tab-pane fade mt-2" id="nav-contact" role="tabpanel"
-                            aria-labelledby="nav-contact-tab" tabindex="0">We are welcome in the world of technologies.
-                            Today, every human activity is simplified due to the emergence of new and fast pace
-                            technologies. The field of computer science is registering new techniques in our day-to-day
-                            life. One of the famous technologies is “Artificial Intelligence”. Due to its increasing
-                            applications, everyone from small kids to the elders is well aware of this term and using
-                            its application in our day-to-day life.<br><b>Thanks!</b>
-                        </div>
-                        <div class="tab-pane fade mt-2" id="nav-blog" role="tabpanel" aria-labelledby="nav-blog-tab"
-                            tabindex="0">From manufacturing to retail and banking to bakeries, even legacy companies are
-                            using machine learning to unlock new value or boost efficiency. “Machine learning is
-                            changing, or will change, every industry, and leaders need to understand the basic
-                            principles, the potential, and the limitations,” said MIT computer science professor
-                            Aleksander Madry, director of the MIT Center for Deployable Machine<br><b>Thanks!</b>
-                        </div>
-                        <div class="tab-pane fade mt-2" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab"
-                            tabindex="0">Along with World War I, World War II was one of the great watersheds of
-                            20th-century geopolitical history. It resulted in the extension of the Soviet Union’s power
-                            to nations of eastern Europe, enabled a communist movement to eventually achieve power in
-                            China, and marked the decisive shift of power in the world away from the states of western
-                            Europe and toward the United States and the Soviet Union.<br><b>Thanks!</b></div>
-                        <div class="tab-pane fade text-center mb-4 mt-3" id="nav-help" role="tabpanel"
-                            aria-labelledby="nav-help-tab" tabindex="0">Contact:- +9176XXXXXX83<br>Mail:-
-                            surya.singh@minditsystems.com<br>Thanks for Contacting! <br><b>Surya Singh</b>
-                        </div>
-                    </div>
-                </div>
+      <div class="row align-items-center d-flex">
+        <div class="col-lg-6 col-sm-12">
+          <div class="card">
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button
+                  class="nav-link active"
+                  id="nav-home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-home"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-home"
+                  aria-selected="true"
+                >
+                  Home
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-profile"
+                  aria-selected="false"
+                >
+                  Profile
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-contact-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-contact"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-contact"
+                  aria-selected="false"
+                >
+                  Contact
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-blog-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-blog"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-blog"
+                  aria-selected="false"
+                >
+                  Blog
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-about-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-about"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-about"
+                  aria-selected="false"
+                >
+                  About
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-help-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-help"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-help"
+                  aria-selected="false"
+                >
+                  Help
+                </button>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div
+                class="tab-pane fade show active mt-2"
+                id="nav-home"
+                role="tabpanel"
+                aria-labelledby="nav-home-tab"
+                tabindex="0"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla
+                suscipit deserunt recusandae, voluptatum vitae, ullam cupiditate
+                pariatur repellat expedita praesentium veniam cumque iste
+                possimus ipsum cum voluptatibus facilis similique iusto! Ipsa
+                quia vel doloremque natus iure itaque dolores, quidem eius
+                laudantium quibusdam excepturi molestiae, alias tempore magni
+                dolorem aspernatur ex.<br /><b>Thanks!</b>
+              </div>
+              <div
+                class="tab-pane fade mt-2"
+                id="nav-profile"
+                role="tabpanel"
+                aria-labelledby="nav-profile-tab"
+                tabindex="0"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                molestiae neque assumenda numquam sapiente praesentium ipsa
+                possimus cumque, quae repudiandae, incidunt blanditiis vero
+                doloremque mollitia aliquam exercitationem, nisi molestias
+                facilis ipsum maxime amet iure cum. Soluta voluptates cupiditate
+                dicta veritatis.<br /><b>Thanks!</b>
+              </div>
+              <div
+                class="tab-pane fade mt-2"
+                id="nav-contact"
+                role="tabpanel"
+                aria-labelledby="nav-contact-tab"
+                tabindex="0"
+              >
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Maiores quod laboriosam numquam, natus quam qui, enim ab
+                doloribus nulla rem vero blanditiis! Vero consectetur doloremque
+                quas perferendis ullam dolore, vel odio. Quod hic vero
+                distinctio nemo, laudantium laborum perspiciatis voluptatem?<br /><b
+                  >Thanks!</b
+                >
+              </div>
+              <div
+                class="tab-pane fade mt-2"
+                id="nav-blog"
+                role="tabpanel"
+                aria-labelledby="nav-blog-tab"
+                tabindex="0"
+              >
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem,
+                esse inventore, in odit impedit temporibus fuga similique labore
+                amet eligendi eaque nam, magni reprehenderit ab repellendus
+                possimus. Similique, eos minus fugiat eius odio natus
+                voluptatibus, quis fugit quia officia totam tempora perferendis,
+                nam sapiente molestiae dolores optio debitis quaerat quas!<br /><b
+                  >Thanks!</b
+                >
+              </div>
+              <div
+                class="tab-pane fade mt-2"
+                id="nav-about"
+                role="tabpanel"
+                aria-labelledby="nav-about-tab"
+                tabindex="0"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+                sapiente cum atque nostrum suscipit quia tenetur explicabo iure
+                voluptas autem temporibus quae deserunt, quibusdam numquam
+                nulla? Hic consequatur voluptate, repellat pariatur unde sit
+                reiciendis quos eveniet porro illo id sed?<br /><b>Thanks!</b>
+              </div>
+              <div
+                class="tab-pane fade text-center mb-4 mt-3"
+                id="nav-help"
+                role="tabpanel"
+                aria-labelledby="nav-help-tab"
+                tabindex="0"
+              >
+                Contact:- +9195XXXXX279<br />Mail:- shashank.mish@gmail.com<br />Thanks
+                for Contacting! <br /><b>Shashank Mishra</b>
+              </div>
             </div>
-            <div class="col">
-                <div class="card">
-                    <div class="accordion accordion-flush" id="accordionFlushExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                    aria-controls="flush-collapseOne">
-                                    HTML
-                                </button>
-                            </h2>
-                            <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                                    demonstrate the <code>.accordion-flush</code> class. This is the first item's
-                                    accordion body.</div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                    aria-controls="flush-collapseTwo">
-                                    CSS
-                                </button>
-                            </h2>
-                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                                    demonstrate the <code>.accordion-flush</code> class. This is the second item's
-                                    accordion body. Let's imagine this being filled with some actual content.</div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                    aria-controls="flush-collapseThree">
-                                    Bootstrap
-                                </button>
-                            </h2>
-                            <div id="flush-collapseThree" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">This is the third item's
-                                    accordion body. Nothing more exciting happening here in terms of content, but just
-                                    filling up the space to make it look, at least at first glance, a bit more
-                                    representative of how this would look in a real-world application.</div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseFour" aria-expanded="false"
-                                    aria-controls="flush-collapseFour">
-                                    Python
-                                </button>
-                            </h2>
-                            <div id="flush-collapseFour" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">World War II or the Second World War, often abbreviated as
-                                    WWII or WW2, was a global conflict that lasted from 1939 to 1945. The vast majority
-                                    of the world's countries, including all of the great powers, fought as part of two
-                                    opposing military alliances: the Allies and the Axis. </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+          </div>
         </div>
-    </div>
 
+        <div class="col">
+          <div class="card">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    HTML
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    HTML stands for Hyper Text Markup Language HTML is the
+                    standard markup language <code>for creating Web</code> pages
+                    HTML describes the structure of a Web page
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    CSS
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    CSS stands for Cascading Style Sheets CSS describes how HTML
+                    elements are to be displayed on screen, paper, or in other
+                    media <code> CSS saves a lot of work.</code>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    Bootstrap
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Bootstrap is a free front-end framework for faster and
+                    easier web development Bootstrap includes HTML and CSS based
+                    design templates for typography, forms, buttons, tables,
+                    navigation, modals, image carousels and many other, as well
+                    as optional JavaScript plugins
+                    <code>Bootstrap also gives you</code> the ability to easily
+                    create responsive designs
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFour"
+                  >
+                    Python
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFour"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Python can be used on a server to create web applications.
+                    Python can be used alongside software to create workflows.
+                    Python can connect to database systems. It can also read and
+                    modify files. Python can be used to handle big data and
+                    perform complex mathematics.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="container px-4 py-5" id="custom-cards">
-        <h2 class="pb-2 border-bottom" style="text-align: center;">Google Charts</h2>
-        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-            <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-bg-light rounded-4 shadow-lg">
-                    <div class="d-flex flex-column h-100 p-5 pb-3 text-dark text-shadow-1">
-                        <h3>PIE CHART : -</h3>
-                        <div id="piechart"></div>
-
-                    </div>
-                </div>
+      <h2 class="pb-2 border-bottom" style="text-align: center">
+        Google Charts
+      </h2>
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-light rounded-4 shadow-lg"
+          >
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-dark text-shadow-1"
+            >
+              <h3>PIE CHART :</h3>
+              <div id="piechart"></div>
             </div>
-
-            <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-bg-light rounded-4 shadow-lg">
-                    <div class="d-flex flex-column h-100 p-5 pb-3 text-dark text-shadow-1">
-                        <h3>BAR GRAPH : -</h3>
-                        <div id="barchart_values"></div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-bg-light rounded-4 shadow-lg">
-                    <div class="d-flex flex-column h-100 p-5 pb-3 text-dark text-shadow-1">
-                        <h3>SCATTER CHARTS : -</h3>
-                        <div id="animatedshapes_div"></div>
-
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-light rounded-4 shadow-lg"
+          >
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-dark text-shadow-1"
+            >
+              <h3>BAR GRAPH :</h3>
+              <div id="barchart_values"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-light rounded-4 shadow-lg"
+          >
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-dark text-shadow-1"
+            >
+              <h3>SCATTER CHARTS :</h3>
+              <div id="animatedshapes_div"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="table-responsive">
-        <h2 class="pb-2 border-bottom" style="text-align: center;">TABLE SORTING</h2>
-        <table id="example" class="display table table-striped ">
-            <thead>
-                <tr>
-                    <th>Position</th>
-                    <th>Name</th>
-                    <th>Office</th>
-                    <th>Age</th>
-                    <th>Start date</th>
-                    <th>Salary</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Tiger Nixon</td>
-                    <td>System Architect</td>
-                    <td>Edinburgh</td>
-                    <td>61</td>
-                    <td>2011-04-25</td>
-                    <td>$320,800</td>
-                </tr>
-                <tr>
-                    <td>Garrett Winters</td>
-                    <td>Accountant</td>
-                    <td>Tokyo</td>
-                    <td>63</td>
-                    <td>2011-07-25</td>
-                    <td>$170,750</td>
-                </tr>
-                <tr>
-                    <td>Ashton Cox</td>
-                    <td>Junior Technical Author</td>
-                    <td>San Francisco</td>
-                    <td>66</td>
-                    <td>2009-01-12</td>
-                    <td>$86,000</td>
-                </tr>
-                <tr>
-                    <td>Cedric Kelly</td>
-                    <td>Senior Javascript Developer</td>
-                    <td>Edinburgh</td>
-                    <td>22</td>
-                    <td>2012-03-29</td>
-                    <td>$433,060</td>
-                </tr>
-                <tr>
-                    <td>Airi Satou</td>
-                    <td>Accountant</td>
-                    <td>Tokyo</td>
-                    <td>33</td>
-                    <td>2008-11-28</td>
-                    <td>$162,700</td>
-                </tr>
-                <tr>
-                    <td>Brielle Williamson</td>
-                    <td>Integration Specialist</td>
-                    <td>New York</td>
-                    <td>61</td>
-                    <td>2012-12-02</td>
-                    <td>$372,000</td>
-                </tr>
-                <tr>
-                    <td>Herrod Chandler</td>
-                    <td>Sales Assistant</td>
-                    <td>San Francisco</td>
-                    <td>59</td>
-                    <td>2012-08-06</td>
-                    <td>$137,500</td>
-                </tr>
-                <tr>
-                    <td>Rhona Davidson</td>
-                    <td>Integration Specialist</td>
-                    <td>Tokyo</td>
-                    <td>55</td>
-                    <td>2010-10-14</td>
-                    <td>$327,900</td>
-                </tr>
-                <tr>
-                    <td>Colleen Hurst</td>
-                    <td>Javascript Developer</td>
-                    <td>San Francisco</td>
-                    <td>39</td>
-                    <td>2009-09-15</td>
-                    <td>$205,500</td>
-                </tr>
-                <tr>
-                    <td>Sonya Frost</td>
-                    <td>Software Engineer</td>
-                    <td>Edinburgh</td>
-                    <td>23</td>
-                    <td>2008-12-13</td>
-                    <td>$103,600</td>
-                </tr>
-                <tr>
-                    <td>Jena Gaines</td>
-                    <td>Office Manager</td>
-                    <td>London</td>
-                    <td>30</td>
-                    <td>2008-12-19</td>
-                    <td>$90,560</td>
-                </tr>
-                <tr>
-                    <td>Quinn Flynn</td>
-                    <td>Support Lead</td>
-                    <td>Edinburgh</td>
-                    <td>22</td>
-                    <td>2013-03-03</td>
-                    <td>$342,000</td>
-                </tr>
-                <tr>
-                    <td>Charde Marshall</td>
-                    <td>Regional Director</td>
-                    <td>San Francisco</td>
-                    <td>36</td>
-                    <td>2008-10-16</td>
-                    <td>$470,600</td>
-                </tr>
-                <tr>
-                    <td>Haley Kennedy</td>
-                    <td>Senior Marketing Designer</td>
-                    <td>London</td>
-                    <td>43</td>
-                    <td>2012-12-18</td>
-                    <td>$313,500</td>
-                </tr>
-                <tr>
-                    <td>Tatyana Fitzpatrick</td>
-                    <td>Regional Director</td>
-                    <td>London</td>
-                    <td>19</td>
-                    <td>2010-03-17</td>
-                    <td>$385,750</td>
-                </tr>
-                <tr>
-                    <td>Michael Silva</td>
-                    <td>Marketing Designer</td>
-                    <td>London</td>
-                    <td>66</td>
-                    <td>2012-11-27</td>
-                    <td>$198,500</td>
-                </tr>
-                <tr>
-                    <td>Paul Byrd</td>
-                    <td>Chief Financial Officer (CFO)</td>
-                    <td>New York</td>
-                    <td>64</td>
-                    <td>2010-06-09</td>
-                    <td>$725,000</td>
-                </tr>
-                <tr>
-                    <td>Gloria Little</td>
-                    <td>Systems Administrator</td>
-                    <td>New York</td>
-                    <td>59</td>
-                    <td>2009-04-10</td>
-                    <td>$237,500</td>
-                </tr>
-                <tr>
-                    <td>Bradley Greer</td>
-                    <td>Software Engineer</td>
-                    <td>London</td>
-                    <td>41</td>
-                    <td>2012-10-13</td>
-                    <td>$132,000</td>
-                </tr>
-                <tr>
-                    <td>Dai Rios</td>
-                    <td>Personnel Lead</td>
-                    <td>Edinburgh</td>
-                    <td>35</td>
-                    <td>2012-09-26</td>
-                    <td>$217,500</td>
-                </tr>
-                <tr>
-                    <td>Jenette Caldwell</td>
-                    <td>Development Lead</td>
-                    <td>New York</td>
-                    <td>30</td>
-                    <td>2011-09-03</td>
-                    <td>$345,000</td>
-                </tr>
-                <tr>
-                    <td>Yuri Berry</td>
-                    <td>Chief Marketing Officer (CMO)</td>
-                    <td>New York</td>
-                    <td>40</td>
-                    <td>2009-06-25</td>
-                    <td>$675,000</td>
-                </tr>
-                <tr>
-                    <td>Caesar Vance</td>
-                    <td>Pre-Sales Support</td>
-                    <td>New York</td>
-                    <td>21</td>
-                    <td>2011-12-12</td>
-                    <td>$106,450</td>
-                </tr>
-                <tr>
-                    <td>Doris Wilder</td>
-                    <td>Sales Assistant</td>
-                    <td>Sydney</td>
-                    <td>23</td>
-                    <td>2010-09-20</td>
-                    <td>$85,600</td>
-                </tr>
-                <tr>
-                    <td>Angelica Ramos</td>
-                    <td>Chief Executive Officer (CEO)</td>
-                    <td>London</td>
-                    <td>47</td>
-                    <td>2009-10-09</td>
-                    <td>$1,200,000</td>
-                </tr>
-                <tr>
-                    <td>Gavin Joyce</td>
-                    <td>Developer</td>
-                    <td>Edinburgh</td>
-                    <td>42</td>
-                    <td>2010-12-22</td>
-                    <td>$92,575</td>
-                </tr>
-                <tr>
-                    <td>Jennifer Chang</td>
-                    <td>Regional Director</td>
-                    <td>Singapore</td>
-                    <td>28</td>
-                    <td>2010-11-14</td>
-                    <td>$357,650</td>
-                </tr>
-                <tr>
-                    <td>Brenden Wagner</td>
-                    <td>Software Engineer</td>
-                    <td>San Francisco</td>
-                    <td>28</td>
-                    <td>2011-06-07</td>
-                    <td>$206,850</td>
-                </tr>
-                <tr>
-                    <td>Fiona Green</td>
-                    <td>Chief Operating Officer (COO)</td>
-                    <td>San Francisco</td>
-                    <td>48</td>
-                    <td>2010-03-11</td>
-                    <td>$850,000</td>
-                </tr>
-                <tr>
-                    <td>Shou Itou</td>
-                    <td>Regional Marketing</td>
-                    <td>Tokyo</td>
-                    <td>20</td>
-                    <td>2011-08-14</td>
-                    <td>$163,000</td>
-                </tr>
-                <tr>
-                    <td>Michelle House</td>
-                    <td>Integration Specialist</td>
-                    <td>Sydney</td>
-                    <td>37</td>
-                    <td>2011-06-02</td>
-                    <td>$95,400</td>
-                </tr>
-                <tr>
-                    <td>Suki Burks</td>
-                    <td>Developer</td>
-                    <td>London</td>
-                    <td>53</td>
-                    <td>2009-10-22</td>
-                    <td>$114,500</td>
-                </tr>
-                <tr>
-                    <td>Prescott Bartlett</td>
-                    <td>Technical Author</td>
-                    <td>London</td>
-                    <td>27</td>
-                    <td>2011-05-07</td>
-                    <td>$145,000</td>
-                </tr>
-                <tr>
-                    <td>Gavin Cortez</td>
-                    <td>Team Leader</td>
-                    <td>San Francisco</td>
-                    <td>22</td>
-                    <td>2008-10-26</td>
-                    <td>$235,500</td>
-                </tr>
-                <tr>
-                    <td>Martena Mccray</td>
-                    <td>Post-Sales support</td>
-                    <td>Edinburgh</td>
-                    <td>46</td>
-                    <td>2011-03-09</td>
-                    <td>$324,050</td>
-                </tr>
-                <tr>
-                    <td>Unity Butler</td>
-                    <td>Marketing Designer</td>
-                    <td>San Francisco</td>
-                    <td>47</td>
-                    <td>2009-12-09</td>
-                    <td>$85,675</td>
-                </tr>
-                <tr>
-                    <td>Howard Hatfield</td>
-                    <td>Office Manager</td>
-                    <td>San Francisco</td>
-                    <td>51</td>
-                    <td>2008-12-16</td>
-                    <td>$164,500</td>
-                </tr>
-                <tr>
-                    <td>Hope Fuentes</td>
-                    <td>Secretary</td>
-                    <td>San Francisco</td>
-                    <td>41</td>
-                    <td>2010-02-12</td>
-                    <td>$109,850</td>
-                </tr>
-                <tr>
-                    <td>Vivian Harrell</td>
-                    <td>Financial Controller</td>
-                    <td>San Francisco</td>
-                    <td>62</td>
-                    <td>2009-02-14</td>
-                    <td>$452,500</td>
-                </tr>
-                <tr>
-                    <td>Timothy Mooney</td>
-                    <td>Office Manager</td>
-                    <td>London</td>
-                    <td>37</td>
-                    <td>2008-12-11</td>
-                    <td>$136,200</td>
-                </tr>
-                <tr>
-                    <td>Jackson Bradshaw</td>
-                    <td>Director</td>
-                    <td>New York</td>
-                    <td>65</td>
-                    <td>2008-09-26</td>
-                    <td>$645,750</td>
-                </tr>
-                <tr>
-                    <td>Olivia Liang</td>
-                    <td>Support Engineer</td>
-                    <td>Singapore</td>
-                    <td>64</td>
-                    <td>2011-02-03</td>
-                    <td>$234,500</td>
-                </tr>
-                <tr>
-                    <td>Bruno Nash</td>
-                    <td>Software Engineer</td>
-                    <td>London</td>
-                    <td>38</td>
-                    <td>2011-05-03</td>
-                    <td>$163,500</td>
-                </tr>
-                <tr>
-                    <td>Sakura Yamamoto</td>
-                    <td>Support Engineer</td>
-                    <td>Tokyo</td>
-                    <td>37</td>
-                    <td>2009-08-19</td>
-                    <td>$139,575</td>
-                </tr>
-                <tr>
-                    <td>Thor Walton</td>
-                    <td>Developer</td>
-                    <td>New York</td>
-                    <td>61</td>
-                    <td>2013-08-11</td>
-                    <td>$98,540</td>
-                </tr>
-                <tr>
-                    <td>Finn Camacho</td>
-                    <td>Support Engineer</td>
-                    <td>San Francisco</td>
-                    <td>47</td>
-                    <td>2009-07-07</td>
-                    <td>$87,500</td>
-                </tr>
-                <tr>
-                    <td>Serge Baldwin</td>
-                    <td>Data Coordinator</td>
-                    <td>Singapore</td>
-                    <td>64</td>
-                    <td>2012-04-09</td>
-                    <td>$138,575</td>
-                </tr>
-                <tr>
-                    <td>Zenaida Frank</td>
-                    <td>Software Engineer</td>
-                    <td>New York</td>
-                    <td>63</td>
-                    <td>2010-01-04</td>
-                    <td>$125,250</td>
-                </tr>
-                <tr>
-                    <td>Zorita Serrano</td>
-                    <td>Software Engineer</td>
-                    <td>San Francisco</td>
-                    <td>56</td>
-                    <td>2012-06-01</td>
-                    <td>$115,000</td>
-                </tr>
-                <tr>
-                    <td>Jennifer Acosta</td>
-                    <td>Junior Javascript Developer</td>
-                    <td>Edinburgh</td>
-                    <td>43</td>
-                    <td>2013-02-01</td>
-                    <td>$75,650</td>
-                </tr>
-                <tr>
-                    <td>Cara Stevens</td>
-                    <td>Sales Assistant</td>
-                    <td>New York</td>
-                    <td>46</td>
-                    <td>2011-12-06</td>
-                    <td>$145,600</td>
-                </tr>
-                <tr>
-                    <td>Hermione Butler</td>
-                    <td>Regional Director</td>
-                    <td>London</td>
-                    <td>47</td>
-                    <td>2011-03-21</td>
-                    <td>$356,250</td>
-                </tr>
-                <tr>
-                    <td>Lael Greer</td>
-                    <td>Systems Administrator</td>
-                    <td>London</td>
-                    <td>21</td>
-                    <td>2009-02-27</td>
-                    <td>$103,500</td>
-                </tr>
-                <tr>
-                    <td>Jonas Alexander</td>
-                    <td>Developer</td>
-                    <td>San Francisco</td>
-                    <td>30</td>
-                    <td>2010-07-14</td>
-                    <td>$86,500</td>
-                </tr>
-                <tr>
-                    <td>Shad Decker</td>
-                    <td>Regional Director</td>
-                    <td>Edinburgh</td>
-                    <td>51</td>
-                    <td>2008-11-13</td>
-                    <td>$183,000</td>
-                </tr>
-                <tr>
-                    <td>Michael Bruce</td>
-                    <td>Javascript Developer</td>
-                    <td>Singapore</td>
-                    <td>29</td>
-                    <td>2011-06-27</td>
-                    <td>$183,000</td>
-                </tr>
-                <tr>
-                    <td>Donna Snider</td>
-                    <td>Customer Support</td>
-                    <td>New York</td>
-                    <td>27</td>
-                    <td>2011-01-25</td>
-                    <td>$112,000</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <th>Name</th>
-                    <th>Position</th>
-                    <th>Office</th>
-                    <th>Age</th>
-                    <th>Start date</th>
-                    <th>Salary</th>
-                </tr>
-            </tfoot>
-        </table>
+      <h2 class="pb-2 border-bottom" style="text-align: center">
+        TABLE SORTING
+      </h2>
+      <table id="example" class="display table table-striped">
+        <thead>
+          <tr>
+            <th>Position</th>
+            <th>Name</th>
+            <th>Office</th>
+            <th>Age</th>
+            <th>Start date</th>
+            <th>Salary</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tiger Nixon</td>
+            <td>System Architect</td>
+            <td>Edinburgh</td>
+            <td>61</td>
+            <td>2011-04-25</td>
+            <td>$320,800</td>
+          </tr>
+
+          <tr>
+            <td>Michael Silva</td>
+            <td>Marketing Designer</td>
+            <td>London</td>
+            <td>66</td>
+            <td>2012-11-27</td>
+            <td>$198,500</td>
+          </tr>
+          <tr>
+            <td>Paul Byrd</td>
+            <td>Chief Financial Officer (CFO)</td>
+            <td>New York</td>
+            <td>64</td>
+            <td>2010-06-09</td>
+            <td>$725,000</td>
+          </tr>
+          <tr>
+            <td>Gloria Little</td>
+            <td>Systems Administrator</td>
+            <td>New York</td>
+            <td>59</td>
+            <td>2009-04-10</td>
+            <td>$237,500</td>
+          </tr>
+          <tr>
+            <td>Bradley Greer</td>
+            <td>Software Engineer</td>
+            <td>London</td>
+            <td>41</td>
+            <td>2012-10-13</td>
+            <td>$132,000</td>
+          </tr>
+
+          <tr>
+            <td>Brenden Wagner</td>
+            <td>Software Engineer</td>
+            <td>San Francisco</td>
+            <td>28</td>
+            <td>2011-06-07</td>
+            <td>$206,850</td>
+          </tr>
+          <tr>
+            <td>Fiona Green</td>
+            <td>Chief Operating Officer (COO)</td>
+            <td>San Francisco</td>
+            <td>48</td>
+            <td>2010-03-11</td>
+            <td>$850,000</td>
+          </tr>
+
+          <tr>
+            <td>Martena Mccray</td>
+            <td>Post-Sales support</td>
+            <td>Edinburgh</td>
+            <td>46</td>
+            <td>2011-03-09</td>
+            <td>$324,050</td>
+          </tr>
+          <tr>
+            <td>Unity Butler</td>
+            <td>Marketing Designer</td>
+            <td>San Francisco</td>
+            <td>47</td>
+            <td>2009-12-09</td>
+            <td>$85,675</td>
+          </tr>
+          <tr>
+            <td>Howard Hatfield</td>
+            <td>Office Manager</td>
+            <td>San Francisco</td>
+            <td>51</td>
+            <td>2008-12-16</td>
+            <td>$164,500</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Office</th>
+            <th>Age</th>
+            <th>Start date</th>
+            <th>Salary</th>
+          </tr>
+        </tfoot>
+      </table>
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
     -->
-
-
-</body>
-
+  </body>
 </html>
